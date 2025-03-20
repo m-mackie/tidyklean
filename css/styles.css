@@ -1,0 +1,50 @@
+@import url('reset.css');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Font and Color Variables */
+:root {
+    --font-logo: 'Yanone Kaffeesatz', sans-serif;
+    --font-header: 'Montserrat', sans-serif;
+    --font-paragraph: 'Open Sans', sans-serif;
+
+    --color-background: #fcf5ec;
+    --color-text: #262021;
+    --color-accent: #f36f13;
+}
+
+body {
+    font-family: var(--font-paragraph);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
