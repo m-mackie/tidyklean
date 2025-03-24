@@ -1,0 +1,61 @@
+
+/* ====================================================
+   ✅ HERO / MAIN SECTION STYLES
+   ==================================================== */
+
+main {
+  background-color: var(--color-background-secondary);
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main__content {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.main__content h2 {
+  font-family: var(--font-subheader);
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.main__content p {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+#main__img {
+  flex: 1 1 400px;
+  max-width: 500px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main__content,
+  #main__img {
+    max-width: 100%;
+  }
+
+  .main__content h2 {
+    font-size: 1.75rem;
+  }
+
+  .main__content p {
+    font-size: 1rem;
+  }
+}

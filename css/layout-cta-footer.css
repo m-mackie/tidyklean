@@ -1,2 +1,66 @@
-/* CTA and FOOTER styles */
-/* Will be filled with actual content when needed */
+
+/* ====================================================
+   ✅ CALL TO ACTION SECTION
+   ==================================================== */
+
+   .cta__container {
+    background-color: var(--color-background-secondary);
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: center;
+  }
+  
+  .cta__container h1 {
+    font-family: var(--font-subheader);
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .cta__container p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+  }
+  
+  /* ====================================================
+     ✅ FOOTER STYLES
+     ==================================================== */
+  
+  footer {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+    padding: var(--spacing-md);
+    text-align: center;
+  }
+  
+  .footer__links {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer__links a {
+    color: var(--color-background);
+    text-decoration: none;
+    margin: 0 var(--spacing-xs);
+    font-size: 1rem;
+  }
+  
+  .footer__links a:hover {
+    color: var(--color-accent);
+  }
+  
+  footer p {
+    font-size: 0.875rem;
+    margin-top: var(--spacing-xs);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cta__container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .cta__container p {
+      font-size: 1rem;
+    }
+  }
+  

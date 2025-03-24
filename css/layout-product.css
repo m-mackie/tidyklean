@@ -1,2 +1,56 @@
-/* PRODUCT section styles */
-/* Will be filled with actual content when needed */
+
+/* ====================================================
+   ✅ PRODUCT SECTION STYLES
+   ==================================================== */
+
+   .product__container {
+    background-color: var(--color-accent);
+    color: var(--color-text-secondary);
+    padding: var(--spacing-lg) var(--spacing-md);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .product__content {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .product__content h2 {
+    font-family: var(--font-subheader);
+    font-size: 2rem;
+    color: var(--color-accent-secondary);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .product__content p {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+  }
+  
+  #product__img {
+    flex: 1 1 400px;
+    max-width: 500px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .product__content,
+    #product__img {
+      max-width: 100%;
+    }
+  
+    .product__content h2 {
+      font-size: 1.75rem;
+    }
+  
+    .product__content p {
+      font-size: 1rem;
+    }
+  }

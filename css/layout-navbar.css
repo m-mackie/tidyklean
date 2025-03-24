@@ -1,2 +1,110 @@
-/* NAVBAR styles */
-/* Will be filled with actual content when needed */
+
+/* ====================================================
+   ✅ NAVIGATION BAR STYLES
+   ==================================================== */
+
+   .navbar {
+    background-color: var(--color-accent-secondary);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 var(--spacing-md);
+  }
+  
+  #navbar__logo {
+    color: var(--color-background);
+    font-family: var(--font-logo-header);
+    font-size: 2.5rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: var(--spacing-md);
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: var(--color-background);
+    text-decoration: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    background-color: var(--color-background);
+    color: var(--color-accent-secondary);
+    border-radius: var(--radius);
+  }
+  
+  .navbar__button .btn-primary {
+    margin-left: var(--spacing-sm);
+  }
+  
+  /* Mobile Menu Toggle Placeholder (future) */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 768px) {
+    .navbar__menu {
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      background-color: var(--color-accent-secondary);
+      transition: left 0.3s ease-in-out;
+    }
+  
+    .navbar__menu.active {
+      left: 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+      color: var(--color-background);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  
+    .navbar__container {
+      flex-wrap: wrap;
+    }
+  
+    .navbar__item {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar__links {
+      width: 100%;
+      justify-content: center;
+      padding: var(--spacing-md);
+    }
+  }
+  
