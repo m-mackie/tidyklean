@@ -1,106 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tidy Klean Fake Product Site</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TidyKlean – Eco-Friendly Laundry Solutions</title>
+  <meta name="description" content="TidyKlean is a professional-grade laundry solution designed for eco-conscious cleaning. Safe for all fabrics, tough on stains." />
+
+  <!-- Modular CSS Imports -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <link rel="stylesheet" href="layout-navbar.css" />
+  <link rel="stylesheet" href="layout-main.css" />
+  <link rel="stylesheet" href="layout-product.css" />
+  <link rel="stylesheet" href="layout-testimonial.css" />
+  <link rel="stylesheet" href="layout-cta-footer.css" /> -->
+
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css">
 </head>
+
 <body>
-<div class="container">
-  <nav class="navbar">
-    <div class="navbar__container">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__container">
         <a href="/" id="navbar__logo">TIDYKLEAN</a>
         <ul class="navbar__menu">
-            <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
-            <li class="navbar__item"><a href="/" class="navbar__links">Products</a></li>
-            <li class="navbar__item"><a href="/" class="navbar__links">Testimonials</a></li> 
-            <li class="navbar__button"><button class="btn-primary">Shop Now</button></li>
+          <li class="navbar__item"><a href="#hero" class="navbar__links">Home</a></li>
+          <li class="navbar__item"><a href="#product" class="navbar__links">Product</a></li>
+          <li class="navbar__item"><a href="#testimonial" class="navbar__links">Testimonials</a></li>
+          <li class="navbar__button"><button class="btn-primary">Shop Now</button></li>
         </ul>
-    </div>
-  </nav>
-    <main>
-        <div class="main__container">
-            <section class="main__content">
-                <h2>Laundry Made Easy</h2>
-                <p>Experience the power of professional-grade cleaning with Tidy Clean. Our eco-friendly formula removes tough stains while being gentle on your clothes.</p>
-                <button class="btn-secondary">Shop Now &rarr;</button>
-            </section> 
-                <img src="/assets/images/washing-machine-9262103_1280.jpg" alt="laundry in a basket" id="main__img">
-             
-        </div>
-    </main>
-    <div class="product__container">
-        <img src="/assets/images/disinfectant-5093503_1280.jpg" alt="laundry in a basket" id="product__img">
-        <section class="product__content">
-            <h2>Happy Clothes, Happy Life</h2>
-            <p>Our advanced formula is designed to tackle even the toughest stains, leaving your clothes fresh, clean, and vibrant. TidyKlean is safe for all fabrics and works in both hot and cold water. Say goodbye to dull laundry days and hello to a brighter, cleaner wardrobe!</p>
-        </section> 
-           
-    </div>
-    <div class="testimonial__container">
-        <section id="testimonial">
-            <h1>What our customers say</h1>
-            <div class="cards__container">
-                <div class="card">
-                    <div class="star-rating">
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">☆</span>
-                        <span class="star__icon">☆</span>
-                    </div>
-                    <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                    <img class="portrait" src="/assets/images/woman-1845148_1280.jpg" alt="customer1">
-                    <h3>Customer Name</h3>
-                </div>
-                <div class="card">
-                    <div class="star-rating">
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">☆</span>
-                        <span class="star__icon">☆</span>
-                    </div>
-                    <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                    <img class="portrait" src="/assets/images/woman-8800324_1280.jpg" alt="customer2">
-                    <h3>Customer Name</h3>
-                </div>
-                <div class="card">
-                    <div class="star-rating">
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">★</span>
-                        <span class="star__icon">☆</span>
-                        <span class="star__icon">☆</span>
-                    </div>
-                    <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                    <img class="portrait" src="/assets/images/portrait-6228705_1280.jpg " alt="customer3">
-                    <h3>Customer Name</h3>
-                </div>
-            </div>
-           
-        </section>
-    </div>
-    <div class="cta__container">
-        <section id="call-to-action">
-            <h1>Ready to Experience the TidyKlean difference?</h1>
-            <p>Join thousands of satisfied customers who have made the switch to TidyKlean. Try it yourself today and see the difference for yourself!</p>
-            <button class="btn-primary">Get Started Now</button>
-        </section>
-    </div>
-    <footer>
-    <div class="footer__content">
-        <div class="footer__links">
-            <a href="/">Privacy Policy</a>
-            <a href="/">Terms of Service</a>
-            <a href="/">Contact Us</a>
-        </div>
-        <p>&copy; 2023 TidyKlean. All rights reserved.</p>
-    </div>
-    </footer>
+      </div>
+    </nav>
 
-</div>
+    <main id="hero">
+      <div class="main__container">
+        <section class="main__content">
+          <h2>Laundry Made Easy</h2>
+          <p>Experience the power of professional-grade cleaning with TidyKlean. Our eco-friendly formula removes tough stains while being gentle on your clothes.</p>
+          <button class="btn-secondary">Shop Now →</button>
+        </section>
+        <img src="/assets/images/washing-machine-9262103_1280.jpg" alt="A basket of laundry next to a washing machine" id="main__img" />
+      </div>
+    </main>
+
+    <section class="product__container" id="product">
+      <img src="/assets/images/disinfectant-5093503_1280.jpg" alt="Bottle of eco-friendly detergent" id="product__img" />
+      <div class="product__content">
+        <h2>Happy Clothes, Happy Life</h2>
+        <p>Our advanced formula tackles the toughest stains, leaving your clothes fresh, clean, and vibrant. Works in hot or cold water. Safe for all fabrics. It’s time to ditch dull laundry days!</p>
+      </div>
+    </section>
+
+    <section class="testimonial__container" id="testimonial">
+      <h1>What Our Customers Say</h1>
+      <div class="cards__container">
+        <div class="card">
+          <div class="star-rating">
+            <span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">☆</span>
+          </div>
+          <p class="customer-quote">“It smells amazing and my clothes feel brand new. Love this product!”</p>
+          <img class="portrait" src="/assets/images/woman-1845148_1280.jpg" alt="Photo of Anna" />
+          <h3>Anna M.</h3>
+        </div>
+        <div class="card">
+          <div class="star-rating">
+            <span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span>
+          </div>
+          <p class="customer-quote">“TidyKlean works wonders even on my toddler’s messy clothes. 10/10!”</p>
+          <img class="portrait" src="/assets/images/woman-8800324_1280.jpg" alt="Photo of Sara" />
+          <h3>Sara L.</h3>
+        </div>
+        <div class="card">
+          <div class="star-rating">
+            <span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span><span class="star__icon">★</span>
+          </div>
+          <p class="customer-quote">“Safe, effective, and eco-friendly? Yes, please! I’m hooked.”</p>
+          <img class="portrait" src="/assets/images/portrait-6228705_1280.jpg" alt="Photo of Jamie" />
+          <h3>Jamie R.</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta__container">
+      <h1>Ready to Experience the TidyKlean Difference?</h1>
+      <p>Join thousands of happy customers. Try it for yourself today!</p>
+      <button class="btn-primary">Get Started Now</button>
+    </section>
+
+    <footer>
+      <div class="footer__content">
+        <div class="footer__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2025 TidyKlean. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
