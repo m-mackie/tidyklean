@@ -5,84 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tidy Klean Fake Product Site</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
 </head>
 <body>
-<header>
-    <h2 id="logo"><a href="#Home">TidyKlean</a></h2>
-    <nav>
-        <a href="#Home" class="navlink">Home</a>
-        <a href="#Product" class="navlink">Product</a>
-        <a href="#Testimonial" class="navlink">Testimonial</a>
-         
-        <a href="#cart" class="cart">
-            <i class="fa-thin fa-cart-shopping"></i>
-        </a>
-      
-        <button class="btn primary">Buy Now</button>
-    </nav>
-</header>
-<main>  
-    <section id="home-section">
-        <div class="home-content">
-            <h1>Clean Clothes, Happy Life</h1>
-            <p>Experience the power of professional-grade cleaning with Tidy Clean. Our eco-friendly formula removes tough stains while being gentle on your clothes.</p>
-            <button class="btn secondary">Shop Now &rarr;</button>
-        </div>
-        <img src="/assets/images/washing-machine-9262103_1280.jpg" alt="washing-machine" class="home-image">
-    </section>
-    <section id="Product">
-        <h1>Product</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    </section>
-    <section id="Testimonial">
-        <h1>What our customers say</h1>
-        <div class="card first-card">
-            <div class="star-rating">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
-                <span>☆</span>
+<div class="container">
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo">TIDYKLEAN</a>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
+            <li class="navbar__item"><a href="/" class="navbar__links">Products</a></li>
+            <li class="navbar__item"><a href="/" class="navbar__links">Testimonials</a></li> 
+            <li class="navbar__button"><button class="btn-primary">Shop Now</button></li>
+        </ul>
+    </div>
+  </nav>
+    <main>
+        <div class="main__container">
+            <section class="main__content">
+                <h1>Happy Clothes, Happy Life</h1>
+                <h2>Professional Grade Cleaning </h2>
+                <p>Experience the power of professional-grade cleaning with Tidy Clean. Our eco-friendly formula removes tough stains while being gentle on your clothes.</p>
+                <button class="btn-secondary">Shop Now &rarr;</button>
+            </section>
+            <div class="main__img--container">
+                <img src="/assets/images/washing-machine-9262103_1280.jpg" alt="laundry in a basket" id="main__img">
             </div>
-            <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-            <img src="/images/customer1.jpg" alt="customer1">
-            <h3>Customer Name</h3>
         </div>
-        <div class="card second-card">
-            <div class="star-rating">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
-                <span>☆</span>
-            </div>
-            <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-            <img src="/images/customer1.jpg" alt="customer1">
-            <h3>Customer Name</h3>
-        </div>
-        <div class="card third-card">
-            <div class="star-rating">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
-                <span>☆</span>
-            </div>
-            <p class="customer-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-            <img src="/images/customer1.jpg" alt="customer1">
-            <h3>Customer Name</h3>
-        </div>
-    </section>
-    <section id="call-to-action">
-        <h1>Ready to Experience the TidyKlean difference?</h1>
-        <p>Join thousands of satisfied customers who have made the switch to TidyKlean. Try it yourself today and see the difference for yourself!</p>
-        <button>Get Started Now</button>
-    </section>
-</main>
-<footer>
+    </main>
 
-</footer> 
-    
+
+</div>
 </body>
 </html>
